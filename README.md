@@ -1,4 +1,4 @@
-![BuildStatus](https://github.com/bmi203-2023/hw6-hmm-viterbi/actions/workflows/main.yml/badge.svg?)
+[![hw6-hmm-viterbi](https://github.com/hrscott/hw6-hmm-viterbi/actions/workflows/python-package.yml/badge.svg)](https://github.com/hrscott/hw6-hmm-viterbi/actions/workflows/python-package.yml)
 [![Documentation Status](https://readthedocs.org/projects/hw6-hmm-viterbi/badge/?version=latest)](https://hw6-hmm-viterbi.readthedocs.io/en/latest/?badge=latest)
 
 # Lab 6: Inferring CRE Selection Strategies from Chromatin Regulatory State Observations using a Hidden Markov Model and the Viterbi Algorithm
