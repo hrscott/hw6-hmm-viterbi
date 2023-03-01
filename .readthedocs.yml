@@ -14,3 +14,47 @@ python:
   install:
     - method: pip # pip will recognize the pyproject.toml for installation
       path: .
+      
+# 1. Speculate how the progenitor cardiomyocyte Hidden Markov Model and primitive cardiomyocyte regulatory observations and inferred hidden states might change if the model design's sliding window (default set to 60 kilobases) were to increase or decrease?
+
+# The progenitor cardiomyocyte Hidden Markov Model, primitive cardiomyocyte regulatory observations, and inferred hidden states are designed based on the assumption that the regulatory DNA elements that control the transcription of genes associated with 
+# cardiomyocyte differentiation are located within a specific range of genomic distance from the gene. Therefore, changing the sliding window size would affect the number and identity of the regulatory elements that are captured by the model. If the sliding 
+# window size is increased, the model will capture a larger genomic region, which may result in the inclusion of more distal regulatory elements that are not typically included in the model. This may change the inferred hidden states and the regulatory observations
+# associated with each hidden state. Similarly, if the sliding window size is decreased, the model will capture a smaller genomic region, which may result in the exclusion of regulatory elements that are crucial for accurate modeling of cardiomyocyte differentiation. 
+# This may lead to a decrease in the accuracy of the model's inferred hidden states and regulatory observations.
+
+
+# 2. How would you recommend integrating additional genomics data (i.e., histone and transcription factor ChIP-seq data) to update or revise the progenitor cardiomyocyte Hidden Markov Model? In your updated/revised model, how would you define the observation and hidden states, and the prior, transition, and emission probabilities? Using the updated/revised design, what new testable hypotheses would you be able to evaluate and/or disprove?
+
+# Integrating additional genomics data such as histone and transcription factor ChIP-seq data can provide valuable insights into the regulatory mechanisms of progenitor cardiomyocytes. To update or revise the Hidden Markov Model (HMM), we could define new observation and hidden states based on the chromatin states identified by the histone ChIP-seq data and the binding states of transcription factors identified by the transcription factor ChIP-seq data. 
+# The prior probabilities could be defined based on the frequency of each chromatin state and transcription factor binding state in the genome, while the transition probabilities could be defined based on the frequency of transitions between each state observed in the data. The emission probabilities could be defined based on the frequency of each observation state given each hidden state.
+
+# With the updated/revised HMM, we could test new hypotheses such as:
+
+# Do specific chromatin states or combinations of chromatin states correlate with specific transcription factor binding states?
+# Are there specific chromatin states or combinations of chromatin states that are associated with increased or decreased expression of cardiomyocyte-specific genes?
+# Do certain transcription factors have a greater influence on chromatin state and gene expression than others?
+# Does the HMM trained on progenitor cardiomyocyte data generalize to other cell types or developmental stages?
+
+# These hypotheses could be tested by applying the updated/revised HMM to new data sets and comparing the predicted hidden state sequences with the actual biological outcomes, such as gene expression levels or cell fate decisions.
+
+
+# 3. Following functional characterization (i.e., MPRA or CRISPRi/a) of progenitor and primitive cardiomyocytes, consider all possible scenarios for recommending how to update or revise our genomic annotation for *cis*-candidate regulatory elements (cCREs) and candidate regulatory elements (CREs)?
+
+# Add new cCREs and CREs: MPRA or CRISPRi/a experiments may identify novel cCREs and CREs that were not previously annotated in the genome. These can be added to the existing annotation to improve the accuracy and completeness of the regulatory landscape.
+
+# Update existing cCREs and CREs: Functional characterization may reveal that some of the previously annotated cCREs and CREs are not actually functional or are involved in different developmental processes than previously thought. These can be updated or revised based on the experimental data to improve the accuracy of the regulatory landscape.
+
+# Refine cCRE and CRE boundaries: Functional characterization can also provide insights into the precise boundaries of cCREs and CREs. For example, MPRA experiments may identify the exact region of a candidate enhancer that is responsible for its activity. This information can be used to refine the boundaries of the cCRE or CRE, improving the accuracy and specificity of the annotation.
+
+# In an updated/revised model, the observation and hidden states, as well as the prior, transition, and emission probabilities would need to be redefined based on the new experimental data. For example, new observation states could be defined based on the expression levels or activity of the candidate regulatory elements in progenitor and primitive cardiomyocytes. 
+# The prior probabilities could be updated based on the frequency of these elements in the genome and their association with different chromatin states. The transition probabilities could be updated based on the co-occurrence of different regulatory elements and their association with specific developmental processes. The emission probabilities could be updated based 
+# on the activity or expression levels of the candidate regulatory elements in progenitor and primitive cardiomyocytes.
+
+# Using the updated/revised design, we could evaluate several new testable hypotheses, such as:
+
+# Do the candidate regulatory elements identified through functional characterization have a higher predictive power for the differentiation and development of progenitor and primitive cardiomyocytes than previously annotated elements?
+
+# Are there new or unexpected patterns of co-occurrence and association between different regulatory elements and chromatin states that emerge from the updated/revised model?
+
+# Do the refined boundaries of cCREs and CREs improve the accuracy and specificity of the regulatory landscape, and can this be validated through functional experiments?
