@@ -96,12 +96,12 @@ def test_deliverable():
 
 We recommend completing these deliverables in the listed order:
 
-- [ ] Implement the Viterbi algorithm in models.decoders.ViterbiAlgorithm found hw6-hmm-viterbi/src/models/decoders.py.
+- [X] Implement the Viterbi algorithm in models.decoders.ViterbiAlgorithm found hw6-hmm-viterbi/src/models/decoders.py.
 
 - [ ] Complete the docstrings in submodules models.hmm and models.decoders by following the pep257 format including pep484 type hints. 
     - Please note, Visual Studio Code supports an extension called [autoDocstring](https://github.com/NilsJPWerner/autoDocstring/blob/HEAD/docs/pep257.md), which will help by creating an automated template for each class method and function.
 
-- [ ] Develop **two** user case unit tests that follow a testable hypothesis that you design for the Viterbi algorithm. State your hypothesis in the documentation.
+- [X] Develop **two** user case unit tests that follow a testable hypothesis that you design for the Viterbi algorithm. State your hypothesis in the documentation.
     - For example, in the lecture, we reviewed an example where the observations were the dedication of a rotating graduate student, and the hidden states were the rotation project's NIH funding.
 
 **Decision Questions, Reminders, & Important Notes**
@@ -158,7 +158,7 @@ def test_user_case_one():
 
 - [ ] Build the project deliverable's ReadTheDoc (RTD).
 
-- [ ] **Short Answer**: Evaluate the project deliverable and briefly answer the speculative questions in the RTD, with an eye to the project's limitations as related to the theory, model design, experimental data (i.e., biology and technology). Please navigate to hw6-hmm-viterbi/docs/index.rst and answer the questions under the sections titled **Functional Characterization Report**. 
+- [X] **Short Answer**: Evaluate the project deliverable and briefly answer the speculative questions in the RTD, with an eye to the project's limitations as related to the theory, model design, experimental data (i.e., biology and technology). Please navigate to hw6-hmm-viterbi/docs/index.rst and answer the questions under the sections titled **Functional Characterization Report**. 
 
 ```Markdown
 1. Speculate how the progenitor cardiomyocyte Hidden Markov Model and primitive cardiomyocyte regulatory observations and inferred hidden states might change if the model design's sliding window (default set to 60 kilobases) were to increase or decrease?
